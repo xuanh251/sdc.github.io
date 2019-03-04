@@ -617,7 +617,6 @@ li.nav-item {
         font-size: 13px;
     }
 }
-
 @media (min-width: 766px) and (max-width:991px) {
     .flex-custom-column-reverse {
         flex-direction: column-reverse!important;
@@ -650,6 +649,9 @@ li.nav-item {
     }
     #second-search-form input {
         min-width: 280px;
+    }
+    .udn-footer .container .row div:nth-child(2){
+        padding-top: 10px;
     }
 }
 
@@ -693,6 +695,12 @@ li.nav-item {
     }
     #second-search-form input {
         min-width: 145px;
+    }
+    .udn-copyright{
+        font-size: 14px;
+    }
+    .icon-effect li {
+        margin: 0 5px!important;
     }
 }
 
