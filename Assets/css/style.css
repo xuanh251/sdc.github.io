@@ -548,7 +548,9 @@ input.form-control {
     padding-right: 4%;
     white-space: nowrap;
 }
-
+.udn-footer .container .row div:nth-child(2){
+    text-align: right;
+}
 /* .udn-tbtt .nav-link{
     padding-bottom: 0px;
 } */
@@ -650,7 +652,11 @@ li.nav-item {
     #second-search-form input {
         min-width: 280px;
     }
+    .udn-footer{
+        text-align: center;
+    }
     .udn-footer .container .row div:nth-child(2){
+        text-align: center;
         padding-top: 10px;
     }
 }
