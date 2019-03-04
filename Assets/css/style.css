@@ -638,6 +638,18 @@ li.nav-item {
         min-width: 195px;
     }
 }
+@media (max-width:375px) {
+    .site-name{
+        white-space: normal;
+        font-size: 29px;
+    }
+}
+@media (max-width:320px) {
+    .site-name{
+        white-space: normal;
+        font-size: 24px;
+    }
+}
 
 .icon {
     display: inline-block;
@@ -705,4 +717,13 @@ li.nav-item {
     -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+}
+.full-witdh-img{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+.full-width-image img {
+    width: 100%;
 }
