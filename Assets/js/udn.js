@@ -52,7 +52,7 @@ var udn = {
     return [day, month, year].join('-');
   },
   checkResize: function () {
-    if ($(window).width() <= 974) {
+    if ($(window).width() <= 991) {
       $('#first-search-form').hide();
       $('#second-search-form').show();
       var listClassname=$('#collapseOne').attr('class');
@@ -65,6 +65,11 @@ var udn = {
       $('#second-search-form').hide();
       $('#collapseOne').addClass('show');
     }
+    // if ($(window).width() <= 545) {
+    //   $('#top-link ul li:not(.li-img)').hide();
+    // }else{
+    //   $('#top-link ul li:not(.li-img)').show();
+    // }
   }
 }
 udn.init();
