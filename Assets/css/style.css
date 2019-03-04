@@ -638,16 +638,40 @@ li.nav-item {
         min-width: 195px;
     }
 }
+@media (max-width:415px) {
+    #second-search-form .form-inline {
+        margin: 20px 0px 15px -5px;
+    }
+    #second-search-form button{
+        margin-left: 8px;
+    }
+}
 @media (max-width:375px) {
     .site-name{
         white-space: normal;
         font-size: 29px;
+    }
+    #second-search-form .form-inline {
+        margin: 20px 30px 15px 0px;
+    }
+    .div-second-search-form{
+        width: 80%;
+    }
+    #second-search-form input {
+        min-width: 175px;
+    }
+    .img-logo {
+        width: 60px;
+        margin: 15px 5px 5px 0px;
     }
 }
 @media (max-width:320px) {
     .site-name{
         white-space: normal;
         font-size: 24px;
+    }
+    #second-search-form input {
+        min-width: 145px;
     }
 }
 
@@ -718,7 +742,7 @@ li.nav-item {
     transform: scale(1);
     opacity: 1;
 }
-.full-witdh-img{
+.full-width-img{
     width: 100vw;
     position: relative;
     left: 50%;
