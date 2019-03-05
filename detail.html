@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Đại học Đà Nẵng</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Assets/css/normalize.css">
     <link rel="stylesheet" href="Assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/sidebarNavigation.css">
 </head>
-
 <body>
-
     <!-- Header -->
     <header id="top-wrap">
         <div class="container">
             <div class="row flex-column-reverse flex-custom-column-reverse flex-md-row justify-content-center">
                 <div class="col-xl-6 col-lg-5 col-md-12">
-                    <div class="row">
+                    <div class="row udn-header">
                         <div class="col-lg-12 col-md-6">
                             <img class="img-logo" src="Assets/img/logo_udn.png">
                             <h3 class="site-name">ĐẠI HỌC ĐÀ NẴNG</h3>
@@ -39,9 +36,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 col-md-12" id="top-link">     
+                <!-- Top link -->
+                <div class="col-xl-6 col-lg-7 col-md-12" id="top-link">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <ul>
                                 <li><a href="#">Lịch tuần</a></li>
                                 <li>|</li>
@@ -53,7 +51,7 @@
                                 <li>|</li>
                             </ul>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <ul>
                                 <li><a href="#">Email</a></li>
                                 <li>|</li>
@@ -81,14 +79,16 @@
     <div id="main-menu">
         <div class="container">
             <nav class="navbar-dark navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler align-self-start btn-nav-onleft my-1" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler align-self-start btn-nav-onright my-1" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto udn-top-nav">
+                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row initHeight flex-xl-row justify-content-lg-end mobileMenuLeft"
+                    id="navbarSupportedContentLeft p-3 p-lg-0 mt-5">
+                    <ul class="navbar-nav align-self-stretch udn-top-nav">
                         <li class="nav-item ml-2">
                             <a class="nav-link" href="index.html">TRANG CHỦ</a>
                         </li>
@@ -108,6 +108,7 @@
 
                 </div>
             </nav>
+
         </div>
     </div>
     <!-- Top Image -->
@@ -122,59 +123,51 @@
             </div>
         </div>
     </div>
-    <!-- Thong bao - tin tuc -->
+    <!-- Body -->
     <div class="container mt-4">
         <div class="row justify-content-md-center">
             <div class="col-xl-12 mb-5">
                 <div class="row udn-content">
                     <!-- Left nav -->
                     <div class="col-lg-3">
-                        <div id="accordion">
-                            <h5 class="mb-0 mt-0">
-                                <button class="btn btn-collapse li-title rounded-0 text-left" data-toggle="collapse"
-                                    id="democollapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    BAN KHOA HỌC CN&MT
-                                </button>
-                            </h5>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordion">
-                                <div class="udn-sidebar">
-                                    <ul class="p-0 udn-sidebar-content">
-                                        <li><a href="#">Trang chủ</a></li>
-                                        <li><a href="#">Giới thiệu</a></li>
-                                        <li><a href="#">Chức năng - Nhiệm vụ - Nhân sự</a></li>
-                                        <li><a href="#">Tin tức</a></li>
-                                        <li><a href="#">Thông báo</a></li>
-                                        <li><a href="#">Hội đồng Khoa học Đào tạo</a></li>
-                                        <li><a href="#">Hội đồng chức danh</a></li>
-                                        <li><a href="#">Quỹ Khoa học Công nghệ</a></li>
-                                        <li><a href="#">Đề tài / Dự án KHCN</a></li>
-                                        <li><a href="#">Hội nghị - Hội thảo</a></li>
-                                        <li><a href="#">Hội chợ triển lãm</a></li>
-                                        <li><a href="#">Sinh viên NCKH</a></li>
-                                        <li><a href="#">Sở hữu trí tuệ</a></li>
-                                        <li><a href="#">Nhóm Nghiên cứu - Giảng dạy</a></li>
-                                        <li><a href="#">Trung tâm NCKH / CGCN</a></li>
-                                        <li><a href="#">Liên kết doanh nghiệp</a></li>
-                                        <li><a href="#">Giải thưởng KHCN</a></li>
-                                        <li><a href="#">Tạp chí KHCN</a></li>
-                                        <li><a href="#">Lý lịch khoa học</a></li>
-                                        <li><a href="#">Mẫu văn bản KHCN</a></li>
-                                        <li><a href="#">Văn bản liên quan</a></li>
-                                        <li><a class="toggle">Thống kê <span></span></a>
-                                            <ul>
-                                                <li><a href="#">Công bố quốc tế</a></li>
-                                                <li><a href="#">Công bố trong nước</a></li>
-                                                <li><a href="#">Đề tài / Dự án KHCN</a></li>
-                                                <li><a href="#">Hội nghị - Hội thảo</a></li>
-                                                <li><a href="#">Hội chợ triển lãm</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class=" mobileMenuRight initHeight " id="navbarSupportedContentRight">
+                            <div class="udn-sidebar">
+                                <ul class="p-0 udn-sidebar-content navbar-nav">
+                                    <li><a href="#">BAN KHOA HỌC CN&MT</a></li>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Chức năng - Nhiệm vụ - Nhân sự</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Thông báo</a></li>
+                                    <li><a href="#">Hội đồng Khoa học Đào tạo</a></li>
+                                    <li><a href="#">Hội đồng chức danh</a></li>
+                                    <li><a href="#">Quỹ Khoa học Công nghệ</a></li>
+                                    <li><a href="#">Đề tài / Dự án KHCN</a></li>
+                                    <li><a href="#">Hội nghị - Hội thảo</a></li>
+                                    <li><a href="#">Hội chợ triển lãm</a></li>
+                                    <li><a href="#">Sinh viên NCKH</a></li>
+                                    <li><a href="#">Sở hữu trí tuệ</a></li>
+                                    <li><a href="#">Nhóm Nghiên cứu - Giảng dạy</a></li>
+                                    <li><a href="#">Trung tâm NCKH / CGCN</a></li>
+                                    <li><a href="#">Liên kết doanh nghiệp</a></li>
+                                    <li><a href="#">Giải thưởng KHCN</a></li>
+                                    <li><a href="#">Tạp chí KHCN</a></li>
+                                    <li><a href="#">Lý lịch khoa học</a></li>
+                                    <li><a href="#">Mẫu văn bản KHCN</a></li>
+                                    <li><a href="#">Văn bản liên quan</a></li>
+                                    <li><a class="toggle">Thống kê <span></span></a>
+                                        <ul>
+                                            <li><a href="#">Công bố quốc tế</a></li>
+                                            <li><a href="#">Công bố trong nước</a></li>
+                                            <li><a href="#">Đề tài / Dự án KHCN</a></li>
+                                            <li><a href="#">Hội nghị - Hội thảo</a></li>
+                                            <li><a href="#">Hội chợ triển lãm</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
                         <div class="udn-active-img card">
                             <div class="card-body pt-2 pl-2 pr-2">
                                 <h5 class="card-title mt-0"><img class="mr-1"
@@ -229,7 +222,7 @@
                             </div>
                         </div>
                         <div class="row ml-0 mr-0 mt-3">
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#7fa1af;">
@@ -239,7 +232,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#817a79;">
@@ -249,7 +242,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#838d90;">
@@ -259,7 +252,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item align-items-center">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item align-items-center">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#bc3811;">
@@ -269,7 +262,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#60657b;">
@@ -279,7 +272,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#5bb6cd;">
@@ -289,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color:#498e85;">
@@ -299,7 +292,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-6 col-xxs-6 udn-card-item">
+                            <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-6 udn-card-item">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <a href="" style="color: #bb6c55;">
@@ -311,11 +304,11 @@
                                 <div class="w-100"></div>
                             </div>
                         </div>
+                        <!-- Lich cong tac tuan -->
                         <div class="udn-active-img card mt-3">
                             <div class="card-body pt-3 pl-3 pr-2 pb-0">
                                 <h5 class="card-title mt-0"><img class="mr-1"
-                                        src="Assets/img/BCFFE255-7DC9-4267-BDF7-C6A24AE3CD82@1x.png" alt="">LỊCH CÔNG
-                                    TÁC TUẦN</h5>
+                                        src="Assets/img/BCFFE255-7DC9-4267-BDF7-C6A24AE3CD82@1x.png" alt="">LỊCH CÔNG TÁC TUẦN</h5>
                                 <select class="form-control font-custom-size" id="week-number">
                                 </select>
                                 <p class="mt-2 font-custom-size" style="text-align: center;" id="fromDaytoDay">
@@ -325,103 +318,199 @@
                         <!-- Lien ket khac -->
                         <div class="udn-active-img card mt-3 pb-3 mb-3">
                             <div class="card-body pt-3 pl-3 pr-2 pb-0">
-                                <h5 class="card-title mt-0"><img class="mr-1"
-                                        src="Assets/img/4385CC3A-2CFB-41AD-A5C8-B115872F9869@1x.png" alt="">LIÊN KẾT
-                                    KHÁC</h5>
+                                <h5 class="card-title mt-0"><img class="mr-1" src="Assets/img/4385CC3A-2CFB-41AD-A5C8-B115872F9869@1x.png" alt="">LIÊN KẾT KHÁC</h5>
                                 <select class="form-control custom-select">
                                     <option>-Chọn liên kết khác-</option>
                                 </select>
                             </div>
                         </div>
                     </div>
+                    <!-- Render body -->
                     <div class="col-lg-9 udn-right-content">
                         <div class="udn-news-title">
-                            <p class="mb-0">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của khu vực Đông Nam Á</p>
-                            <p class="udn-news-time"><img class="mr-1 mb-1" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
-                            <img width="100%" class="mb-4" src="Assets/img/2A671CA1-4E1A-4638-B8BC-37D61693F347@1x.png" alt="" srcset="">
+                            <p class="mb-0">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của khu vực
+                                Đông Nam Á</p>
+                            <p class="udn-news-time"><img class="mr-1 mb-1" src="Assets/img/clock.png" alt=""
+                                    srcset=""><span>28/11/2018</span></p>
+                            <img width="100%" class="mb-4" src="Assets/img/2A671CA1-4E1A-4638-B8BC-37D61693F347@1x.png"
+                                alt="" srcset="">
                             <div class="udn-news-content text-justify">
-                                <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ Chính trị, Thủ tướng Chính phủ tại buổi thăm và làm việc với Đại học Đà Nẵng (ĐHĐN) sáng ngày 24/02/2017.</p>
-                                <p>Cùng tham dự có Phó Thủ tướng Vũ Đức Đam, Bộ trưởng Bộ Giáo dục và Đào tạo Phùng Xuân Nhạ, Phó Văn phòng Chính phủ Nguyễn Văn Tùng, Thứ trưởng Bộ Kế hoạch và Đầu tư Đào Quang Chung, Thứ trưởng Bộ Tài chính Huỳnh Quang Hải, cùng lãnh đạo các bộ, ban, ngành trung ương; Chủ tịch Thành phố Đà Nẵng Huỳnh Đức Thơ, Chủ tịch Tỉnh Quảng Nam Đinh Văn Thu. Thủ tướng Chính phủ Nguyễn Xuân Phúc tại buổi làm việc với ĐHĐN</p>
-                                <p>Là ĐH vùng trọng điểm quốc gia, ĐHĐN đóng vai trò quan trọng trong việc đào tạo nguồn nhân lực chất lượng cao cho khu vực miền Trung - Tây Nguyên nói riêng và cả nước nói chung.</p>
-                                <p>Tính đến nay, ĐHĐN có tổng số 2.316 cán bộ, công chức viên chức và người lao động, trong đó cán bộ giảng dạy là 1.482 người, chiếm tỷ lệ 64%. Chất lượng đội ngũ cán bộ giảng dạy của ĐHĐN không ngừng tăng lên qua các giai đoạn phát triển. Hiện ĐHĐN có 08 giáo sư, 83 phó giáo sư, 395 tiến sĩ và 1.026 thạc sĩ.</p>
-                                <p>Hiện ĐHĐN đang tổ chức đào tạo 21 chuyên ngành nghiên cứu sinh, 35 chuyên ngành thạc sĩ, 121 chuyên ngành ĐH (trong đó có 27 chương trình chất lượng cao, chương trình tiên tiến và chương trình tinh hoa), 35 chuyên ngành cao đẳng và 13 ngành trung cấp chuyên nghiệp. Quy mô đào tạo của ĐHĐN hiện nay là 55.413 nghiên cứu sinh, học viên cao học và sinh viên, tăng gấp 4 lần so với ngày đầu thành lập. Kết quả khảo sát cho thấy, trên 75% sinh viên có việc làm sau 6 tháng tốt nghiệp, trong đó có nhiều ngành tỷ lệ khá cao, đạt trên 90%.</p>
-                                <p>Mục tiêu đến năm 2020, ĐHĐN phấn đấu trở thành một cơ sở giáo dục phát triển theo hướng ĐH nghiên cứu, là trung tâm đào tạo, nghiên cứu khoa học, chuyển giao công nghệ đa ngành, đa lĩnh vực có chất lượng hàng đầu của Việt Nam...</p>
-                                <p>GS.TS Trần Văn Nam – Thành ủy viên, Bí thư Đảng ủy, Giám đốc ĐHĐN phát biểu và báo cáo tình hình hoạt động và phát triển của ĐHĐN tại buổi làm việc với Thủ tướng Chính phủ</p>
-                                <p>Qua các nội dung báo cáo tại buổi làm việc, GS.TS Trần Văn Nam đã đưa ra các đề xuất và kiến nghị đến Chính phủ, cụ thể: (1) Triển khai hoàn thành quy hoạch dự án làng Đại học Đà Nẵng tại phường Hòa Quý, quận Ngũ Hành Sơn, TP. Đà Nẵng và xã Điện Ngọc, thị xã Điện Bàn, tỉnh Quảng Nam; (2) Rà soát, sắp xếp, tổ chức các khoa, trường trực thuộc ĐHĐN thành 2 trường đại học mới là ĐH Sư phạm Kỹ thuật và ĐH Công nghệ Thông tin và Truyền thông, nâng cấp và phát triển Viện Nghiên cứu và Đào tạo Việt – Anh thành Trường ĐH Việt Anh.</p>
-                                <p>Phát biểu tại buổi làm việc, Phó Thủ tướng Vũ Đức Đam bày tỏ sự đồng tình và ủng hộ ĐHĐN có thêm 3 trường thành viên mới</p>
+                                <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ Chính trị,
+                                    Thủ tướng Chính phủ tại buổi thăm và làm việc với Đại học Đà Nẵng (ĐHĐN) sáng ngày
+                                    24/02/2017.</p>
+                                <p>Cùng tham dự có Phó Thủ tướng Vũ Đức Đam, Bộ trưởng Bộ Giáo dục và Đào tạo Phùng Xuân
+                                    Nhạ, Phó Văn phòng Chính phủ Nguyễn Văn Tùng, Thứ trưởng Bộ Kế hoạch và Đầu tư Đào
+                                    Quang Chung, Thứ trưởng Bộ Tài chính Huỳnh Quang Hải, cùng lãnh đạo các bộ, ban,
+                                    ngành trung ương; Chủ tịch Thành phố Đà Nẵng Huỳnh Đức Thơ, Chủ tịch Tỉnh Quảng Nam
+                                    Đinh Văn Thu. Thủ tướng Chính phủ Nguyễn Xuân Phúc tại buổi làm việc với ĐHĐN</p>
+                                <p>Là ĐH vùng trọng điểm quốc gia, ĐHĐN đóng vai trò quan trọng trong việc đào tạo nguồn
+                                    nhân lực chất lượng cao cho khu vực miền Trung - Tây Nguyên nói riêng và cả nước nói
+                                    chung.</p>
+                                <p>Tính đến nay, ĐHĐN có tổng số 2.316 cán bộ, công chức viên chức và người lao động,
+                                    trong đó cán bộ giảng dạy là 1.482 người, chiếm tỷ lệ 64%. Chất lượng đội ngũ cán bộ
+                                    giảng dạy của ĐHĐN không ngừng tăng lên qua các giai đoạn phát triển. Hiện ĐHĐN có
+                                    08 giáo sư, 83 phó giáo sư, 395 tiến sĩ và 1.026 thạc sĩ.</p>
+                                <p>Hiện ĐHĐN đang tổ chức đào tạo 21 chuyên ngành nghiên cứu sinh, 35 chuyên ngành thạc
+                                    sĩ, 121 chuyên ngành ĐH (trong đó có 27 chương trình chất lượng cao, chương trình
+                                    tiên tiến và chương trình tinh hoa), 35 chuyên ngành cao đẳng và 13 ngành trung cấp
+                                    chuyên nghiệp. Quy mô đào tạo của ĐHĐN hiện nay là 55.413 nghiên cứu sinh, học viên
+                                    cao học và sinh viên, tăng gấp 4 lần so với ngày đầu thành lập. Kết quả khảo sát cho
+                                    thấy, trên 75% sinh viên có việc làm sau 6 tháng tốt nghiệp, trong đó có nhiều ngành
+                                    tỷ lệ khá cao, đạt trên 90%.</p>
+                                <p>Mục tiêu đến năm 2020, ĐHĐN phấn đấu trở thành một cơ sở giáo dục phát triển theo
+                                    hướng ĐH nghiên cứu, là trung tâm đào tạo, nghiên cứu khoa học, chuyển giao công
+                                    nghệ đa ngành, đa lĩnh vực có chất lượng hàng đầu của Việt Nam...</p>
+                                <p>GS.TS Trần Văn Nam – Thành ủy viên, Bí thư Đảng ủy, Giám đốc ĐHĐN phát biểu và báo
+                                    cáo tình hình hoạt động và phát triển của ĐHĐN tại buổi làm việc với Thủ tướng Chính
+                                    phủ</p>
+                                <p>Qua các nội dung báo cáo tại buổi làm việc, GS.TS Trần Văn Nam đã đưa ra các đề xuất
+                                    và kiến nghị đến Chính phủ, cụ thể: (1) Triển khai hoàn thành quy hoạch dự án làng
+                                    Đại học Đà Nẵng tại phường Hòa Quý, quận Ngũ Hành Sơn, TP. Đà Nẵng và xã Điện Ngọc,
+                                    thị xã Điện Bàn, tỉnh Quảng Nam; (2) Rà soát, sắp xếp, tổ chức các khoa, trường trực
+                                    thuộc ĐHĐN thành 2 trường đại học mới là ĐH Sư phạm Kỹ thuật và ĐH Công nghệ Thông
+                                    tin và Truyền thông, nâng cấp và phát triển Viện Nghiên cứu và Đào tạo Việt – Anh
+                                    thành Trường ĐH Việt Anh.</p>
+                                <p>Phát biểu tại buổi làm việc, Phó Thủ tướng Vũ Đức Đam bày tỏ sự đồng tình và ủng hộ
+                                    ĐHĐN có thêm 3 trường thành viên mới</p>
                                 <p>Thủ tướng Chính phủ kết luận tại buổi làm việc</p>
-                                <p> Phát biểu kết luận tại buổi làm việc với ĐHĐN, Thủ tướng Nguyễn Xuân Phúc nhấn mạnh: Trong bối cảnh cuộc cách mạng công nghiệp 4.0 đang diễn ra, ĐHĐN cần nghiên cứu lại sứ mệnh của mình. Theo đó, Thủ tướng đề xuất ĐHĐN cần thể hiện sứ mệnh bao trùm trên cả ba cấp độ, một là tầm địa phương khu vực Đà Nẵng và miền Trung - Tây Nguyên, thứ hai là tầm quốc gia và thứ ba là tầm khu vực và quốc tế. Cụ thể, tầm nhìn của ĐHĐN là phải phấn đấu trở thành môi trường giáo dục tiên tiến, hướng đến đẳng cấp top 50 ĐH nghiên cứu của khu vực Đông Nam Á vào năm 2035, dựa trên khả năng quy tụ những con người xuất sắc và sự kết hợp hài hòa giữa giáo dục tri thức cơ bản với nghiên cứu ứng dụng thực tế; có tầm ảnh hưởng tích cực trong việc giải quyết các vấn đề kinh tế xã hội của đất nước, đặc biệt là khu vực miền Trung - Tây Nguyên.</p>
-                                <p>Với các thế mạnh và tiềm năng phát triển trong lĩnh vực công nghiệp cơ khí, Thủ tướng lưu ý ĐHĐN phải chú trọng đào tạo gắn với nhu cầu thực tiễn và có tính ứng dụng, thực hành cao; phải xung phong đi đầu trong tự chủ ĐH, góp phần nâng cao chất lượng giáo dục ĐH của đất nước.</p>
-                                <p>Trước chương trình làm việc chính thức tại ĐHĐN, Thủ tướng cùng đoàn công tác đã dành thời gian thị sát Làng Đại học Đà Nẵng tại phường Hòa Quý, quận Ngũ Hành Sơn và đến thăm Trường ĐH Bách khoa – ĐHĐN (xem thêm tin tức tại đây)</p>
-                                <p>Thủ tướng cũng nhấn mạnh rằng: “ĐHĐN phải tiếp tục nâng cao hơn nữa chất lượng đào tạo, đẩy mạnh công tác kiểm định chất lượng, phấn đấu ít nhất 80% sinh viên ra trường có việc làm trong vòng 06 tháng hoặc tự tạo việc làm. Đi liền với đó, ban lãnh đạo cùng đội ngũ giảng viên nhà trường phải trực tiếp góp phần tích cực trong đáp ứng nhu cầu lao động chất lượng cao cho các địa phương trong vùng cũng như cả nước, đáp ứng yêu cầu quốc tế và hội nhập”.</p>
-                                <p>Để thực hiện điều đó, Thủ tướng chỉ đạo ĐHĐN tiếp tục hoàn thiện quy trình đào tạo, đạt chuẩn khu vực và quốc tế, đổi mới tư duy dạy và học; phấn đấu nâng tỷ lệ giảng viên có bằng tiến sỹ lên 40% vào năm 2020.</p>
-                                <p>Ngoài ra, Thủ tướng cũng yêu cầu ĐHĐN cần trực tiếp đóng góp vào hệ sinh thái khởi nghiệp quốc gia; hỗ trợ nâng cao chất lượng đào tạo cho các trường ĐH khác trong vùng.</p>
-                                <p>Bàn về dự án Làng ĐHĐN, Thủ tướng kết luận sẽ tái khởi động dự án với tên gọi mới là “Đô thị Đại học Đà Nẵng-Quảng Nam”.</p>
-                                <p>Một trong các kiến nghị của ĐHĐN về thành lập 03 trường ĐH mới là ĐH Sư phạm Kỹ thuật, ĐH Công nghệ Thông tin và Truyền thông, ĐH Quốc tế Việt – Anh đã được Thủ tướng cũng như Phó Thủ tướng, cùng Bộ trưởng Bộ GD&ĐT ủng hộ. Bởi điều này sẽ cho phép các trường vừa đào tạo chuyên sâu, đào tạo nguồn nhân lực chất lượng cao, vừa đào tạo theo đặt hàng từ doanh nghiệp, đáp ứng nhu cầu ngày càng cao của thị trường lao động.</p>
-                                <p>Kết thúc buổi làm việc, Thủ tướng đặc biệt nhấn mạnh: ĐHĐN phải là một trong ba trung tâm nghiên cứu với nhiều công trình khoa học lớn trong phạm vi cả nước, tham gia giải quyết các vấn đề lớn của đất nước và phấn đấu đến năm 2020 tăng gấp đôi số lượng các công bố quốc tế so với hơn 400 bài báo được công bố hiện nay.</p>
-                                <p>Sau buổi làm việc, Thủ tướng Chính phủ Nguyễn Xuân Phúc đã trồng cây lưu niệm trong khuôn viên ĐHĐN.</p>
+                                <p> Phát biểu kết luận tại buổi làm việc với ĐHĐN, Thủ tướng Nguyễn Xuân Phúc nhấn mạnh:
+                                    Trong bối cảnh cuộc cách mạng công nghiệp 4.0 đang diễn ra, ĐHĐN cần nghiên cứu lại
+                                    sứ mệnh của mình. Theo đó, Thủ tướng đề xuất ĐHĐN cần thể hiện sứ mệnh bao trùm trên
+                                    cả ba cấp độ, một là tầm địa phương khu vực Đà Nẵng và miền Trung - Tây Nguyên, thứ
+                                    hai là tầm quốc gia và thứ ba là tầm khu vực và quốc tế. Cụ thể, tầm nhìn của ĐHĐN
+                                    là phải phấn đấu trở thành môi trường giáo dục tiên tiến, hướng đến đẳng cấp top 50
+                                    ĐH nghiên cứu của khu vực Đông Nam Á vào năm 2035, dựa trên khả năng quy tụ những
+                                    con người xuất sắc và sự kết hợp hài hòa giữa giáo dục tri thức cơ bản với nghiên
+                                    cứu ứng dụng thực tế; có tầm ảnh hưởng tích cực trong việc giải quyết các vấn đề
+                                    kinh tế xã hội của đất nước, đặc biệt là khu vực miền Trung - Tây Nguyên.</p>
+                                <p>Với các thế mạnh và tiềm năng phát triển trong lĩnh vực công nghiệp cơ khí, Thủ tướng
+                                    lưu ý ĐHĐN phải chú trọng đào tạo gắn với nhu cầu thực tiễn và có tính ứng dụng,
+                                    thực hành cao; phải xung phong đi đầu trong tự chủ ĐH, góp phần nâng cao chất lượng
+                                    giáo dục ĐH của đất nước.</p>
+                                <p>Trước chương trình làm việc chính thức tại ĐHĐN, Thủ tướng cùng đoàn công tác đã dành
+                                    thời gian thị sát Làng Đại học Đà Nẵng tại phường Hòa Quý, quận Ngũ Hành Sơn và đến
+                                    thăm Trường ĐH Bách khoa – ĐHĐN (xem thêm tin tức tại đây)</p>
+                                <p>Thủ tướng cũng nhấn mạnh rằng: “ĐHĐN phải tiếp tục nâng cao hơn nữa chất lượng đào
+                                    tạo, đẩy mạnh công tác kiểm định chất lượng, phấn đấu ít nhất 80% sinh viên ra
+                                    trường có việc làm trong vòng 06 tháng hoặc tự tạo việc làm. Đi liền với đó, ban
+                                    lãnh đạo cùng đội ngũ giảng viên nhà trường phải trực tiếp góp phần tích cực trong
+                                    đáp ứng nhu cầu lao động chất lượng cao cho các địa phương trong vùng cũng như cả
+                                    nước, đáp ứng yêu cầu quốc tế và hội nhập”.</p>
+                                <p>Để thực hiện điều đó, Thủ tướng chỉ đạo ĐHĐN tiếp tục hoàn thiện quy trình đào tạo,
+                                    đạt chuẩn khu vực và quốc tế, đổi mới tư duy dạy và học; phấn đấu nâng tỷ lệ giảng
+                                    viên có bằng tiến sỹ lên 40% vào năm 2020.</p>
+                                <p>Ngoài ra, Thủ tướng cũng yêu cầu ĐHĐN cần trực tiếp đóng góp vào hệ sinh thái khởi
+                                    nghiệp quốc gia; hỗ trợ nâng cao chất lượng đào tạo cho các trường ĐH khác trong
+                                    vùng.</p>
+                                <p>Bàn về dự án Làng ĐHĐN, Thủ tướng kết luận sẽ tái khởi động dự án với tên gọi mới là
+                                    “Đô thị Đại học Đà Nẵng-Quảng Nam”.</p>
+                                <p>Một trong các kiến nghị của ĐHĐN về thành lập 03 trường ĐH mới là ĐH Sư phạm Kỹ
+                                    thuật, ĐH Công nghệ Thông tin và Truyền thông, ĐH Quốc tế Việt – Anh đã được Thủ
+                                    tướng cũng như Phó Thủ tướng, cùng Bộ trưởng Bộ GD&ĐT ủng hộ. Bởi điều này sẽ cho
+                                    phép các trường vừa đào tạo chuyên sâu, đào tạo nguồn nhân lực chất lượng cao, vừa
+                                    đào tạo theo đặt hàng từ doanh nghiệp, đáp ứng nhu cầu ngày càng cao của thị trường
+                                    lao động.</p>
+                                <p>Kết thúc buổi làm việc, Thủ tướng đặc biệt nhấn mạnh: ĐHĐN phải là một trong ba trung
+                                    tâm nghiên cứu với nhiều công trình khoa học lớn trong phạm vi cả nước, tham gia
+                                    giải quyết các vấn đề lớn của đất nước và phấn đấu đến năm 2020 tăng gấp đôi số
+                                    lượng các công bố quốc tế so với hơn 400 bài báo được công bố hiện nay.</p>
+                                <p>Sau buổi làm việc, Thủ tướng Chính phủ Nguyễn Xuân Phúc đã trồng cây lưu niệm trong
+                                    khuôn viên ĐHĐN.</p>
                                 <div class="udn-news-author text-right">
                                     <p class="mb-0">Đại học Đà Nẵng – www.udn.vn</p>
                                     <p>Tin, ảnh: Thanh Nhã – VP ĐHĐN</p>
                                 </div>
                                 <div class="row udn-news-share">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-6 col-xxs-6 col-xxs-12">
-                                        <p class="my-0 py-2"><img class="mr-2" src="Assets/img/A133FAB2-68FC-4318-A5E4-519188D28A5F@1x.png" alt="" srcset=""><span class="mr-4">Gửi bạn bè</span><img class="mr-2" src="Assets/img/523495A9-F036-4108-9CB1-228CC06222D7@1x.png" alt="" srcset=""><span>In bài</span></p>
+                                        <p class="my-0 py-2"><img class="mr-2"
+                                                src="Assets/img/A133FAB2-68FC-4318-A5E4-519188D28A5F@1x.png" alt=""
+                                                srcset=""><span class="mr-4">Gửi bạn bè</span><img class="mr-2"
+                                                src="Assets/img/523495A9-F036-4108-9CB1-228CC06222D7@1x.png" alt=""
+                                                srcset=""><span>In bài</span></p>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-6 col-xxs-6 col-xxs-12 text-right">
-                                        <p class="my-0 py-2"><span class="mr-3">Chia sẻ</span><img class="mr-2" src="Assets/img/facebook-highly-addictivewhy-999-wwct-6372.png" alt="" srcset=""><img class="mr-2" src="Assets/img/F2BBE06A-5E86-4B91-AAB2-2CD7AE22F785@1x.png" alt="" srcset=""><img src="Assets/img/453E3C8B-159D-4474-96BE-DE04894EBC5B@1x.png" alt="" srcset=""></p>
+                                        <p class="my-0 py-2"><span class="mr-3">Chia sẻ</span><img class="mr-2"
+                                                src="Assets/img/facebook-highly-addictivewhy-999-wwct-6372.png" alt=""
+                                                srcset=""><img class="mr-2"
+                                                src="Assets/img/F2BBE06A-5E86-4B91-AAB2-2CD7AE22F785@1x.png" alt=""
+                                                srcset=""><img
+                                                src="Assets/img/453E3C8B-159D-4474-96BE-DE04894EBC5B@1x.png" alt=""
+                                                srcset=""></p>
                                     </div>
                                 </div>
+                                <!-- Bai viet moi -->
                                 <div class="row mt-5">
                                     <p class="udn-new-article"><span>BÀI VIẾT MỚI</span></p>
                                     <ul class="udn-list-new-article pl-2">
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Lễ kỷ niệm 85 năm ngày thành lập Đảng Cộng sản Việt Nam và Hội nghị tổng kết công tác xây dựng
-                                                Đảng năm 2014 của Đảng bộ ĐHĐN</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Lễ kỷ niệm 85 năm ngày thành lập Đảng Cộng sản
+                                                    Việt Nam và Hội nghị tổng kết công tác xây dựng
+                                                    Đảng năm 2014 của Đảng bộ ĐHĐN</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Đại học Đà Nẵng có 4 Giáo sư và 14 Phó Giáo sư được Hội đồng Chức danh Giáo sư Nhà nước công
-                                                nhận</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Đại học Đà Nẵng có 4 Giáo sư và 14 Phó Giáo sư
+                                                    được Hội đồng Chức danh Giáo sư Nhà nước công
+                                                    nhận</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Khánh thành Nhà công vụ Trường THPT Phan Châu Trinh, Tiên Phước, Quảng Nam</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Khánh thành Nhà công vụ Trường THPT Phan Châu
+                                                    Trinh, Tiên Phước, Quảng Nam</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Phấn đấu trở thành đại học định hướng nghiên cứu vào năm 2020</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Phấn đấu trở thành đại học định hướng nghiên cứu
+                                                    vào năm 2020</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Lễ kỷ niệm ngày Nhà giáo VN: Vinh danh 7 tập thể và 58 cá nhân thuộc Cơ quan ĐHĐN</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Lễ kỷ niệm ngày Nhà giáo VN: Vinh danh 7 tập thể
+                                                    và 58 cá nhân thuộc Cơ quan ĐHĐN</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                     </ul>
                                 </div>
+                                <!-- Bai viet lien quan -->
                                 <div class="row mt-5">
                                     <p class="udn-new-article"><span>BÀI VIẾT LIÊN QUAN</span></p>
                                     <ul class="udn-list-new-article pl-2">
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Lễ kỷ niệm 85 năm ngày thành lập Đảng Cộng sản Việt Nam và Hội nghị tổng kết công tác xây dựng Đảng năm 2014 của Đảng bộ ĐHĐN</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Lễ kỷ niệm 85 năm ngày thành lập Đảng Cộng sản
+                                                    Việt Nam và Hội nghị tổng kết công tác xây dựng Đảng năm 2014 của
+                                                    Đảng bộ ĐHĐN</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Đại học Đà Nẵng có 4 Giáo sư và 14 Phó Giáo sư được Hội đồng Chức danh Giáo sư Nhà nước công
-                                                nhận</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Đại học Đà Nẵng có 4 Giáo sư và 14 Phó Giáo sư
+                                                    được Hội đồng Chức danh Giáo sư Nhà nước công
+                                                    nhận</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Khánh thành Nhà công vụ Trường THPT Phan Châu Trinh, Tiên Phước, Quảng Nam</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Khánh thành Nhà công vụ Trường THPT Phan Châu
+                                                    Trinh, Tiên Phước, Quảng Nam</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Phấn đấu trở thành đại học định hướng nghiên cứu vào năm 2020</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Phấn đấu trở thành đại học định hướng nghiên cứu
+                                                    vào năm 2020</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                         <li class="mt-3">
-                                            <p class="mb-2"><a href="#">Lễ kỷ niệm ngày Nhà giáo VN: Vinh danh 7 tập thể và 58 cá nhân thuộc Cơ quan ĐHĐN</a></p>
-                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png" alt="" srcset=""><span>28/11/2018</span></p>
+                                            <p class="mb-2"><a href="#">Lễ kỷ niệm ngày Nhà giáo VN: Vinh danh 7 tập thể
+                                                    và 58 cá nhân thuộc Cơ quan ĐHĐN</a></p>
+                                            <p class="mb-2"><img class="mb-1 ml-3 mr-2" src="Assets/img/clock.png"
+                                                    alt="" srcset=""><span>28/11/2018</span></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -437,7 +526,8 @@
         <div class="container py-3">
             <div class="d-flex justify-content-between row mt-2">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI HỌC ĐÀ NẴNG</b></div>
+                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI
+                            HỌC ĐÀ NẴNG</b></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 udn-connect">
                     <div class="d-inline-flex">

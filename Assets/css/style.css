@@ -1,3 +1,4 @@
+/* declare font-family */
 @font-face {
     font-family: Roboto-Black;
     src: url(../font/Roboto/Roboto-Black.ttf);
@@ -617,6 +618,18 @@ li.nav-item {
         white-space: nowrap;
         margin-left: -5px;
     }
+    .udn-header{
+        margin-top: -20px;
+    }
+    .form-control:focus {
+        background-color: #EBEBEB!important;
+        border-color:none!important;
+        box-shadow: none!important;
+    }
+    .font-custom-size, .custom-select {
+        font-size: 18px!important;
+    }
+    
 }
 
 @media (min-width:991px) and (max-width:1200px) {
@@ -730,6 +743,12 @@ li.nav-item {
     color: #f1f1f1;
     line-height: 21px;
     text-align: center;
+}
+.icon{
+    opacity: 0.7;
+}
+.icon:hover{
+    opacity: 1;
 }
 
 .icon:after {

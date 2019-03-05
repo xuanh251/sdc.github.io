@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Đại học Đà Nẵng</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Assets/css/normalize.css">
     <link rel="stylesheet" href="Assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/sidebarNavigation.css">
 </head>
-
 <body>
-
     <!-- Header -->
     <header id="top-wrap">
         <div class="container">
             <div class="row flex-column-reverse flex-custom-column-reverse flex-md-row justify-content-center">
                 <div class="col-xl-6 col-lg-5 col-md-12">
-                    <div class="row">
+                    <div class="row udn-header">
                         <div class="col-lg-12 col-md-6">
                             <img class="img-logo" src="Assets/img/logo_udn.png">
                             <h3 class="site-name">ĐẠI HỌC ĐÀ NẴNG</h3>
@@ -78,7 +74,7 @@
         </div>
     </header>
 
-    <!-- Navbar -->
+    <!-- Top Navbar -->
     <div id="main-menu">
         <div class="container">
             <nav class="navbar-dark navbar navbar-expand-lg">
@@ -89,10 +85,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row initHeight flex-xl-row justify-content-lg-end mobileMenuLeft" id="navbarSupportedContentLeft p-3 p-lg-0 mt-5">
+                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row initHeight flex-xl-row justify-content-lg-end mobileMenuLeft"
+                    id="navbarSupportedContentLeft p-3 p-lg-0 mt-5">
                     <ul class="navbar-nav align-self-stretch udn-top-nav">
                         <li class="nav-item ml-2">
-                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">TIN TỨC</a>
@@ -110,7 +107,7 @@
 
                 </div>
             </nav>
-            
+
         </div>
     </div>
     <!-- Top Image -->
@@ -125,15 +122,15 @@
             </div>
         </div>
     </div>
-    <!-- Thong bao - tin tuc -->
+
+    <!-- Body -->
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-xl-12 mb-5">
                 <div class="row udn-content">
                     <!-- Left content -->
                     <div class="col-lg-3">
-                        <div class=" mobileMenuRight undisplay initHeight undisplay " id="navbarSupportedContentRight">
-                        <!-- <div> -->
+                        <div class=" mobileMenuRight initHeight " id="navbarSupportedContentRight">
                             <div class="udn-sidebar">
                                 <ul class="p-0 udn-sidebar-content navbar-nav">
                                     <li><a href="#">BAN KHOA HỌC CN&MT</a></li>
@@ -307,11 +304,10 @@
                                 <div class="w-100"></div>
                             </div>
                         </div>
+                        <!-- Lich cong tac tuan -->
                         <div class="udn-active-img card mt-3">
                             <div class="card-body pt-3 pl-3 pr-2 pb-0">
-                                <h5 class="card-title mt-0"><img class="mr-1"
-                                        src="Assets/img/BCFFE255-7DC9-4267-BDF7-C6A24AE3CD82@1x.png" alt="">LỊCH CÔNG
-                                    TÁC TUẦN</h5>
+                                <h5 class="card-title mt-0"><img class="mr-1" src="Assets/img/BCFFE255-7DC9-4267-BDF7-C6A24AE3CD82@1x.png" alt="">LỊCH CÔNG TÁC TUẦN</h5>
                                 <select class="form-control font-custom-size" id="week-number">
                                 </select>
                                 <p class="mt-2 font-custom-size" style="text-align: center;" id="fromDaytoDay">
@@ -329,17 +325,9 @@
                                 </select>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-6 col-xxs-6">
-                                
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-6 col-xxs-6">
-                                
-                            </div>
-                        </div> -->
-                        <!-- Lich cong tac tuan -->
                     </div>
                     <div class="col-lg-9 udn-right-content">
+                        <!-- Render body -->
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item udn-tbtt">
                                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
@@ -674,8 +662,7 @@
         <div class="container py-3">
             <div class="d-flex justify-content-between row mt-2">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI
-                            HỌC ĐÀ NẴNG</b></div>
+                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI HỌC ĐÀ NẴNG</b></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 udn-connect">
                     <div class="d-inline-flex">
@@ -701,7 +688,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="Assets/bootstrap/bootstrap.min.js"></script>
     <script src="Assets/js/udn.js"></script>
-    <script src="Assets/js/sidebarNavigation.js"></script>
 </body>
 
 </html>
