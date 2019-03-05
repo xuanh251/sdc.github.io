@@ -55,15 +55,15 @@ var udn = {
     if ($(window).width() <= 991) {
       $('#first-search-form').hide();
       $('#second-search-form').show();
-      var listClassname=$('#collapseOne').attr('class');
-      var show ='show';
-      if(listClassname.indexOf(show)!=-1){
-        $('#collapseOne').removeClass('show');
-      }
+      // var listClassname=$('#collapseOne').attr('class');
+      // var show ='show';
+      // if(listClassname.indexOf(show)!=-1){
+      //   $('#collapseOne').removeClass('show');
+      // }
     } else {
       $('#first-search-form').show();
       $('#second-search-form').hide();
-      $('#collapseOne').addClass('show');
+      // $('#collapseOne').addClass('show');
     }
     // if ($(window).width() <= 545) {
     //   $('#top-link ul li:not(.li-img)').hide();

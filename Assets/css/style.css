@@ -22,7 +22,9 @@
     font-family: Roboto-MediumItalic;
     src: url(../font/Roboto/Roboto-MediumItalic.ttf);
 }
-
+body{
+    overflow-x: hidden;
+}
 body, h1, h2, h3, h4, h5, h6, button p span {
     font-family: 'Roboto', sans-serif;
 }

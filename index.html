@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/css/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/sidebarNavigation.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 col-md-12" id="top-link">     
+                <div class="col-xl-6 col-lg-7 col-md-12" id="top-link">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <ul>
@@ -81,14 +82,15 @@
     <div id="main-menu">
         <div class="container">
             <nav class="navbar-dark navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler align-self-start btn-nav-onleft" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler align-self-start btn-nav-onright" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto udn-top-nav">
+                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row initHeight flex-xl-row justify-content-lg-end mobileMenuLeft" id="navbarSupportedContentLeft p-3 p-lg-0 mt-5">
+                    <ul class="navbar-nav align-self-stretch udn-top-nav">
                         <li class="nav-item ml-2">
                             <a class="nav-link" href="#">TRANG CHỦ</a>
                         </li>
@@ -108,6 +110,7 @@
 
                 </div>
             </nav>
+            
         </div>
     </div>
     <!-- Top Image -->
@@ -124,57 +127,50 @@
     </div>
     <!-- Thong bao - tin tuc -->
     <div class="container mt-4">
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-center">
             <div class="col-xl-12 mb-5">
                 <div class="row udn-content">
-                    <!-- Left nav -->
+                    <!-- Left content -->
                     <div class="col-lg-3">
-                        <div id="accordion">
-                            <h5 class="mb-0 mt-0">
-                                <button class="btn btn-collapse li-title rounded-0 text-left" data-toggle="collapse"
-                                    id="democollapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    BAN KHOA HỌC CN&MT
-                                </button>
-                            </h5>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordion">
-                                <div class="udn-sidebar">
-                                    <ul class="p-0 udn-sidebar-content">
-                                        <li><a href="#">Trang chủ</a></li>
-                                        <li><a href="#">Giới thiệu</a></li>
-                                        <li><a href="#">Chức năng - Nhiệm vụ - Nhân sự</a></li>
-                                        <li><a href="#">Tin tức</a></li>
-                                        <li><a href="#">Thông báo</a></li>
-                                        <li><a href="#">Hội đồng Khoa học Đào tạo</a></li>
-                                        <li><a href="#">Hội đồng chức danh</a></li>
-                                        <li><a href="#">Quỹ Khoa học Công nghệ</a></li>
-                                        <li><a href="#">Đề tài / Dự án KHCN</a></li>
-                                        <li><a href="#">Hội nghị - Hội thảo</a></li>
-                                        <li><a href="#">Hội chợ triển lãm</a></li>
-                                        <li><a href="#">Sinh viên NCKH</a></li>
-                                        <li><a href="#">Sở hữu trí tuệ</a></li>
-                                        <li><a href="#">Nhóm Nghiên cứu - Giảng dạy</a></li>
-                                        <li><a href="#">Trung tâm NCKH / CGCN</a></li>
-                                        <li><a href="#">Liên kết doanh nghiệp</a></li>
-                                        <li><a href="#">Giải thưởng KHCN</a></li>
-                                        <li><a href="#">Tạp chí KHCN</a></li>
-                                        <li><a href="#">Lý lịch khoa học</a></li>
-                                        <li><a href="#">Mẫu văn bản KHCN</a></li>
-                                        <li><a href="#">Văn bản liên quan</a></li>
-                                        <li><a class="toggle">Thống kê <span></span></a>
-                                            <ul>
-                                                <li><a href="#">Công bố quốc tế</a></li>
-                                                <li><a href="#">Công bố trong nước</a></li>
-                                                <li><a href="#">Đề tài / Dự án KHCN</a></li>
-                                                <li><a href="#">Hội nghị - Hội thảo</a></li>
-                                                <li><a href="#">Hội chợ triển lãm</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class=" mobileMenuRight undisplay initHeight undisplay " id="navbarSupportedContentRight">
+                        <!-- <div> -->
+                            <div class="udn-sidebar">
+                                <ul class="p-0 udn-sidebar-content navbar-nav">
+                                    <li><a href="#">BAN KHOA HỌC CN&MT</a></li>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Chức năng - Nhiệm vụ - Nhân sự</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Thông báo</a></li>
+                                    <li><a href="#">Hội đồng Khoa học Đào tạo</a></li>
+                                    <li><a href="#">Hội đồng chức danh</a></li>
+                                    <li><a href="#">Quỹ Khoa học Công nghệ</a></li>
+                                    <li><a href="#">Đề tài / Dự án KHCN</a></li>
+                                    <li><a href="#">Hội nghị - Hội thảo</a></li>
+                                    <li><a href="#">Hội chợ triển lãm</a></li>
+                                    <li><a href="#">Sinh viên NCKH</a></li>
+                                    <li><a href="#">Sở hữu trí tuệ</a></li>
+                                    <li><a href="#">Nhóm Nghiên cứu - Giảng dạy</a></li>
+                                    <li><a href="#">Trung tâm NCKH / CGCN</a></li>
+                                    <li><a href="#">Liên kết doanh nghiệp</a></li>
+                                    <li><a href="#">Giải thưởng KHCN</a></li>
+                                    <li><a href="#">Tạp chí KHCN</a></li>
+                                    <li><a href="#">Lý lịch khoa học</a></li>
+                                    <li><a href="#">Mẫu văn bản KHCN</a></li>
+                                    <li><a href="#">Văn bản liên quan</a></li>
+                                    <li><a class="toggle">Thống kê <span></span></a>
+                                        <ul>
+                                            <li><a href="#">Công bố quốc tế</a></li>
+                                            <li><a href="#">Công bố trong nước</a></li>
+                                            <li><a href="#">Đề tài / Dự án KHCN</a></li>
+                                            <li><a href="#">Hội nghị - Hội thảo</a></li>
+                                            <li><a href="#">Hội chợ triển lãm</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
                         <div class="udn-active-img card">
                             <div class="card-body pt-2 pl-2 pr-2">
                                 <h5 class="card-title mt-0"><img class="mr-1"
@@ -362,7 +358,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -375,7 +372,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -388,7 +386,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -401,7 +400,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -414,7 +414,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -427,7 +428,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -440,7 +442,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -453,7 +456,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -466,7 +470,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -479,7 +484,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -508,7 +514,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -521,7 +528,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -534,7 +542,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -547,7 +556,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -560,7 +570,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -573,7 +584,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -586,7 +598,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -599,7 +612,8 @@
                                         <img src="Assets/img/0F26FAA4-C72F-448D-B0A1-18DCC159A328@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -612,7 +626,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -625,7 +640,8 @@
                                         <img src="Assets/img/92B5A21B-AD4C-4FA8-8CCC-A64F6F4D3EC8@1x.png" alt="">
                                     </div>
                                     <div class="col-md-8 udn-news-content">
-                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học hàng đầu của
+                                        <b><a href="detail.html">Đại học Đà Nẵng sẽ trở thành một trong những đại học
+                                                hàng đầu của
                                                 khu vực Đông Nam Á</a></b>
                                         <p><img class="mb-1 mr-1" src="Assets/img/clock.png" alt="">28/11/2018</p>
                                         <p>Đó là chủ trương được đề xuất bởi đồng chí Nguyễn Xuân Phúc - Ủy viên Bộ
@@ -658,7 +674,8 @@
         <div class="container py-3">
             <div class="d-flex justify-content-between row mt-2">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI HỌC ĐÀ NẴNG</b></div>
+                    <div style="opacity: 0.8; white-space: nowrap" class="udn-copyright">Bản quyền © 2019 thuộc <b>ĐẠI
+                            HỌC ĐÀ NẴNG</b></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 udn-connect">
                     <div class="d-inline-flex">
@@ -684,6 +701,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="Assets/bootstrap/bootstrap.min.js"></script>
     <script src="Assets/js/udn.js"></script>
+    <script src="Assets/js/sidebarNavigation.js"></script>
 </body>
 
 </html>
